@@ -30,7 +30,10 @@ class Configuration implements ConfigurationInterface
                         ->scalarNode('configuration_class')->end()
                     ->end()
                 ->end()
-            ->end();
+                ->arrayNode('zf1_namespaces')
+                    ->prototype('scalar')->end()
+                ->end()
+             ->end();
 
         return $treeBuilder;
     }

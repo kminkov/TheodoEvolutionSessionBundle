@@ -11,6 +11,7 @@
         <parameter key="theodo_evolution.session.bag_manager.class">Theodo\Evolution\Bundle\SessionBundle\Manager\BagManager</parameter>
         <parameter key="theodo_evolution.session.symfony1.bag_manager.class">Theodo\Evolution\Bundle\SessionBundle\Manager\Symfony1\BagManager</parameter>
         <parameter key="theodo_evolution.session.symfony1.bag_manager_configuration.class">Theodo\Evolution\Bundle\SessionBundle\Manager\Symfony1\BagConfiguration</parameter>
+        <parameter key="theodo_evolution.session.zendframework1_bag_manager.class">Theodo\Evolution\Bundle\SessionBundle\Manager\ZendFramework1BagManager</parameter>
         <parameter key="theodo_evolution.session.code_igniter.bag_manager_configuration.class">Theodo\Evolution\Bundle\SessionBundle\Manager\CodeIgniter\BagConfiguration</parameter>
     </parameters>
 
