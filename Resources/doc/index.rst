@@ -56,9 +56,11 @@ You can pick the manager and the configuration you need among the following list
     * manager service id: Theodo\Evolution\Bundle\SessionBundle\Manager\ZendFramework1\BagManager
     * configuration service id: Theodo\Evolution\Bundle\SessionBundle\Manager\ZendFramework1\BagConfiguration
 
-If you want to share session between ZendFramework 1.12 and Symfony2, you MUST register the namespaces of your Zend_Session_Namespace objects with the
-zf1_namespaces parameter:
-    zf1_namespaces:
+If you want to share session between ZendFramework 1.12 and Symfony2, you MUST register the namespaces of your Zend_Session_Namespace objects with the namespaces parameter:
+
+::
+
+    namespaces:
           - 'zf_namespace1'
           - 'zf_namespace2'
 
