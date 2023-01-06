@@ -30,7 +30,7 @@ class Configuration implements ConfigurationInterface
                         ->scalarNode('configuration_class')->end()
                     ->end()
                 ->end()
-                ->arrayNode('zf1_namespaces')
+                ->arrayNode('namespaces')
                     ->prototype('scalar')->end()
                 ->end()
              ->end();

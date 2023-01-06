@@ -12,6 +12,13 @@ use Theodo\Evolution\Bundle\SessionBundle\Manager\BagManagerConfigurationInterfa
  */
 class BagConfiguration implements BagManagerConfigurationInterface
 {
+    private $namespaces;
+
+    public function __construct($namespaces)
+    {
+        $this->namespaces = $namespaces;
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -30,12 +37,6 @@ class BagConfiguration implements BagManagerConfigurationInterface
 
     public function isArray($namespaceName)
     {
-        switch ($namespaceName) {
-            case $this->namespaces['attribute_namespace']:
-            case $this->namespaces['credential_namespace']:
-                return true;
-            default:
-                return false;
-        }
+        return true;
     }
 }
