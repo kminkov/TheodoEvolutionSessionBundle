@@ -47,14 +47,14 @@ Configuration
 You can pick the manager and the configuration you need among the following list:
 
  * Symfony1:
-   * manager service id: theodo_evolution.session.symfony1.bag_manager
-   * configuration service id: theodo_evolution.session.symfony1.bag_manager_configuration
+    * **bag_manager_service**: theodo_evolution.session.symfony1.bag_manager
+    * **bag_configuration_service**: theodo_evolution.session.symfony1.bag_manager_configuration
  * CodeIgniter:
-   * manager service id: theodo_evolution.session.bag_manager
-   * configuration service id: theodo_evolution.session.code_igniter.bag_manager_configuration
+    * **bag_manager_service**: theodo_evolution.session.bag_manager
+    * **bag_configuration_service**: theodo_evolution.session.code_igniter.bag_manager_configuration
  * Zend Framework 1:
-    * manager service id: theodo_evolution.session.zendframework1.bag_manager
-    * configuration service id: theodo_evolution.session.zendframework1.bag_manager_configuration
+    * **bag_manager_service**: theodo_evolution.session.zendframework1.bag_manager
+    * **bag_configuration_service**: theodo_evolution.session.zendframework1.bag_manager_configuration
 
 If you want to share session between ZendFramework 1.12 and Symfony2, you MUST register the namespaces of your Zend_Session_Namespace objects with the namespaces parameter:
 
